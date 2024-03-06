@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <!-- Navigation Bar with the current section highlighted as the "active" class-->
+        <ul>
+          <li><a id="active" class="navbar" href="./index.html">Home</a></li>
+          <li><a class="navbar" href="./game-reviews.html">Game Reviews</a></li>
+          <li><a class="navbar" href="./upcoming-reviews.html">Upcoming Reviews</a></li>
+          <li><a class="navbar" href="./developer-companies.html">Developer Companies</a></li>
+          <li><a class="navbar" href="./about.html">About</a></li>
+        </ul>
+        <div class="buffer"></div>
+
+        <!-- Section displaying the current 3 most popular games -->
+        <h1>Popular Games</h1>
+        <div id="popular-games">
+          <a href="./Elden-Ring.html"><img class="border" src="./images/EldenRing.webp" alt="Elden Ring art" style="width:384px;height:216px;"></a>
+          <a href="./Hogwarts-Legacy.html"><img class="border" src="./images/HowargtsLegacy.jpeg" alt="Hogwarts Legacy art" style="width:512px;height:288px;"> </a>
+          <a href="./Star-Wars-Jedi-Fallen-Order.html"><img class="border" src="./images/Jedi-FallenOrder.jpeg" alt="Jedi: Fallen Order art" style="width:384px;height:216px;"> </a>
+        </div>
+
+        <!-- Section displaying the 10 most highly rated games of all time -->
+        <!-- Games without current reviews are given the "alert" class to display an alert if they are clicked on -->
+        <h1>Top Rated Games</h1>
+        <div id="top-games">
+          <div class="alert">
+            <a href=""><img class="border" src="./images/Terraria.jpg" alt="Terraria art" style="width:250px;height:175px;" onclick="unavailable()"></a>
+          </div>
+          <a href="Sekiro-Shadows-Die-Twice.html"><img class="border" src="./images/Sekiro.jpg" alt="Sekiro: Shadows Die Twice art" style="width:250px;height:175px;"></a>
+          <div class="alert">
+            <a href=""><img class="border" src="./images/GTAV.jpeg" alt="Grand Theft Auto V art" style="width:250px;height:175px;" onclick="unavailable()"></a>
+          </div>
+          <div class="alert">
+            <a href=""><img class="border" src="./images/Mario.jpg" alt="Super Mario Odyssey art" style="width:250px;height:175px;" onclick="unavailable()"></a>
+          </div>
+          <div class="alert">
+            <a href=""><img class="border" src="./images/Zelda.jpg" alt="The Legend of Zelda: Breath of the Wild art" style="width:250px;height:175px;" onclick="unavailable()"></a>
+          </div>
+          <div class="alert">
+            <a href=""><img class="border" src="./images/thewitcher.jpg" alt="The witcher 3 art" style="width:250px;height:175px;" onclick="unavailable()"></a>
+          </div>
+          <div class="alert">
+            <a href=""><img class="border" src="./images/StanleyParable.jpg" alt="The Stanley Parable Ultimate Deluxe Edition art" style="width:250px;height:175px;" onclick="unavailable()"></a>
+          </div>
+          <div class="alert">
+            <a href=""><img class="border" src="./images/StardewValley.jpg" alt="Stardew Valley art" style="width:250px;height:175px;" onclick="unavailable()"></a>
+          </div>
+          <div class="alert">
+            <a href=""><img class="border" src="./images/Minecraft.jpg" alt="Minecraft art" style="width:250px;height:175px;" onclick="unavailable()"></a>
+          </div>
+          <div class="alert">
+            <a href=""><img class="border" src="./images/Portal2.jpg" alt="Portal 2 art" style="width:250px;height:175px;" onclick="unavailable()"></a>
+          </div>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
